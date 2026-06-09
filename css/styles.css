@@ -1,0 +1,254 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENEDOR */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* TITULO */
+
+h1 {
+    text-align: center;
+    color: #c61616;
+    margin-bottom: 20px;
+}
+
+/* TARJETAS */
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input,
+form select {
+    flex: 1 1 180px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #c61616;
+    box-shadow: 0 0 5px rgba(198,22,22,0.3);
+}
+
+/* BOTONES */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #c61616;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #9f1010;
+    transform: scale(1.03);
+}
+
+/* BOTONES ESPECIALES */
+
+.editar {
+    background: #f59e0b;
+}
+
+.editar:hover {
+    background: #d97706;
+}
+
+.eliminar {
+    background: #dc2626;
+}
+
+.eliminar:hover {
+    background: #b91c1c;
+}
+
+/* BUSCADOR */
+
+#buscar {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#buscar:focus {
+    border-color: #c61616;
+}
+
+/* TABLAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 1100px;
+}
+
+/* ENCABEZADOS */
+
+th {
+    background: #c61616;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* CELDAS */
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* FILAS */
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+/* COLORES DE COLUMNAS */
+
+/* Entradas */
+td:nth-child(7) {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Salidas */
+td:nth-child(8) {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Total */
+td:nth-child(9) {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Precio Unitario */
+td:nth-child(10) {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* Importe */
+td:nth-child(11) {
+    color: #ea580c;
+    font-weight: bold;
+}
+
+/* RESUMEN */
+
+.resumen {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #111827;
+}
+
+/* FIELDSETS */
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #c61616;
+    padding: 0 10px;
+}
+
+/* NOTA */
+
+#tablaNota td,
+#tablaNota th {
+    border: 1px solid #ccc;
+}
+
+/* SCROLL TABLAS */
+
+.card::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background: #c61616;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form input,
+    form select,
+    button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+        min-width: 1000px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .resumen {
+        text-align: center;
+        font-size: 16px;
+    }
+}
